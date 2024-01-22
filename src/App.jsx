@@ -1,13 +1,11 @@
-import { Header } from "./Header";
-import { Content } from "./Content";
-import { Footer } from "./Footer";
+import { Bill } from "./Bill";
+import { Amount } from "./Amount";
 
 function App() {
   return (
     <div>
-      <Header />
-      <Content />
-      <Footer />
+      <Bill />
+      <Amount />
     </div>
   )
 }
