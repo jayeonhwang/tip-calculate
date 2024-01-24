@@ -1,16 +1,16 @@
-export function Amount() {
+export function Display() {
   return (
-    <div>
+    <div className="display">
       <div className="tipAmount">
         <p>Tip Amont</p>
+        <input type="number" name="tipAmount" />
         <small>/ per person</small>
-        <input type="number" name="tipAmount"/>
       </div>
 
       <div className="totalAmount">
         <p>Total</p>
+        <input type="number" name="total" />
         <small>/ per person</small>
-        <input type="number" name="total"/>
       </div>
 
       <button>Reset</button>

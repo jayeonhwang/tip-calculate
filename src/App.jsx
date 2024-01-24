@@ -1,11 +1,13 @@
-import { Bill } from "./Bill";
-import { Amount } from "./Amount";
+import { Form } from "./Form";
+import { Display } from "./Display";
 
 function App() {
   return (
-    <div>
-      <Bill />
-      <Amount />
+    <div className="board">
+      <div className="container">
+        <Form />
+        <Display />
+      </div>
     </div>
   )
 }
