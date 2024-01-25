@@ -1,10 +1,9 @@
 :root {
-  --white: #fffde0;
-  --yellow: #eed102;
-  --purple1: #645c9f;
-  --purple2: #ebc1d2;
-  --purple3: #433c5e;
-  --purple4: #b98eb1;
+  --white: #ebeaef;
+  --button: #428782;
+  --natural1: #645c9f;
+  --natural2: #6889ce;
+  --accent: #3057a6;
 }
 
 body html {
@@ -16,13 +15,13 @@ body html {
 body {
   font-family: 'Space Mono', monospace;
   font-size: 1.5rem;
-  background-color: var(--purple2);
+  background-color: var(--natural2);
 }
 
 .board {
   display: grid;
   place-items: center;
-  gap: 1rem;
+  gap: rem;
   padding: 150px 50px;
 }
 
@@ -31,16 +30,32 @@ body {
   grid-auto-flow: column;
   gap: 1rem;
   background-color: var(--white);
-  padding: 1rem;
-  border-radius: 2rem;
+  border-radius: 0.8rem;
 }
 
-.form {
+.input-form {
   padding: clamp(2rem, 5vw, 4rem);
 }
+
+.tip-buttons {
+  background-color: var(--button);
+  padding: 1rem;
+}
+
 
 .display {
-  background-color: var(--purple3);
+  display: flex;
+  flex-direction: column;
+  justify-items: flex-start;
+  gap: 0.5rem;
+
+  background-color: var(--accent);
   padding: clamp(2rem, 5vw, 4rem);
-  border-radius: 1.5rem;
+  border-radius: 0.8rem;
+
+}
+
+.label {
+  color: var(--white);
+  font-size: 0.4 rem;
 }
